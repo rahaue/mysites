@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WALSの成果物</title>
+  <script src="https://kit.fontawesome.com/8286733084.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <!-- headコンテナは別途行う -->
+    <div class="head-container">
+      <img class="logo" src="img/logo.png">
+        <nav class="navi">
+          <ul>
+            <li class="menu-item">Portfolio</li>
+            <li class="menu-item">Feature</li>
+            <li class="menu-item">profile</li>
+            <li class="menu-item">Contact</li>
+          </ul>
+        </nav>
+        <div class="menu-box">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="main-visual">
+      <!-- コンテナで囲む -->
+      <div class="container">
+        <h1 class="main-h1">Lorem Ipsum</h1>
+        <p class="main-p">simply dummy text of the printing</p>
+      </div>
+    </div>
+    <div class="portfolio">
+      <!-- portfolio-containerを90%に -->
+      <div class="portfolio-container">
+        <h2>Portfolio</h2>
+        <p>It is a long established fact that a reader will be distracted by the readable<br>
+          content of a page when looking at its layout.<br>
+          The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters
+        </p>
+        <div class="image-boxes clearfix">
+          <div class="pr pr1" style="background-image: url(img/sketch.jpg);"></div>
+          <div class="pr pr2" style="background-image: url(img/websuku.png);"></div>
+          <div class="pr pr3" style="background-image: url(img/write.jpg);"></div>
+          <div class="pr pr4" style="background-image: url(img/webcamp.png);"></div>
+          <div class="pr pr5" style="background-image: url(img/talk.jpg);"></div>
+          <div class="pr pr6" style="background-image: url(img/webcamp-mother.png);"></div>
+        </div>
+      </div>
+    </div>
+    <div class="feature">
+      <!-- feature-containerも90%に -->
+      <div class="feature-container">
+        <h2>Feature</h2>
+        <p class="explain">It is a long established fact that a reader will be distracted by the readable
+          <br>content of a page when looking at its layout.<br> The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters</p>
+        <!-- flexboxを使う -->
+         <div class="strength">
+           <div class="st st1">
+            <i class="fa fa-code"></i>
+            <h3 class="strength-title">Strength1</h3>
+            <p>
+              Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur
+            </p>
+           </div>
+           <div class="st st2">
+             <i class="fa fa-desktop"></i>
+             <h3 class="strength-title">Strength2</h3>
+             <p>
+               Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur
+              </p>
+           </div>
+           <div class="st st3">
+             <i class="fa fa-cogs"></i>
+             <h3 class="strength-title">Strength3</h3>
+             <p>
+              Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur
+             </p>
+           </div>
+         </div>
+      </div>
+    </div>
+    <div class="profile">
+      <!-- 問題はここである -->
+      <div class="profile-container">
+
+        <h2>Profile</h2>
+        <p class="explain">It is a long established fact that a reader will be distracted by the readable
+          <br> content of a page when looking at its layout.
+          <br> The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters
+        </p>
+        <!-- 画像 -->
+        <div class="subclass">
+          <!-- 問題はここです -->
+          <!-- それぞれ500pxずつあるので問題発生 -->
+          <div class="left-content">
+            <div class="my-face" style="background-image: url(img/my-icon.jpg);"></div>
+          </div>
+          <div class="right-content">
+            <h3>MyName</h3>
+            <p class="my-ex">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur</p>
+            <h3>MySkills</h3>
+            <p>HTML/CSS,JavaScript,JQuery,PhotoShop</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="contact">
+      <div class="contact-content">
+        <h2>Contact</h2>
+        <p class="explain">It is a long established fact that a reader will be distracted by the readable<br>
+        content of a page when looking at its layout.<br>
+        The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters
+        </p>
+        <div class="subclass">
+          <!-- 左側 -->
+          <div class="left-contact">
+            <div class="left-contact-content">
+              <div class="mail">
+                <h3>Mail</h3>
+                <a class="des_text" href="mailto:xxx@xxx.com">xxx@xxx.com</a>
+              </div>
+              <div class="tel">
+                <h3>Tel</h3>
+                <a class="des_text" href="tel:00000000000">000-0000-0000</a>
+              </div>
+            </div>
+          </div>
+          <!-- 右側 -->
+          <div class="right-contact">
+            <div class="right-contact-content">
+              <h3>SNS</h3>
+              <div class="class">
+                <i class="fa fa-facebook fa-5x"></i>
+                <i class="fa fa-twitter fa-5x"></i>
+                <i class="fa fa-instagram fa-5x"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </main>
+  <footer>
+    <p class="copyright">©︎ 2017 WebCamp</p>
+  </footer>
+</body>
+</html>

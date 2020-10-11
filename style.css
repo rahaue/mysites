@@ -1,0 +1,548 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+header {
+  background-color: #ec715F;
+  width: 100%;
+  height: 70px;
+}
+
+.head-container {
+  width: 1027px;
+  margin: 0 auto;
+  height: 70px;
+  /* 子要素を全て横並びに */
+  display: flex;
+  /* 縦中央に寄せる */
+  align-items: center;
+}
+
+.logo {
+  height: 70px;
+  /* 右のものを全て端に */
+  margin-right: auto;
+}
+
+.menu-item {
+  list-style: none;
+  display: inline-block;
+  font-size: 16px;
+  color: #FAFAFA;
+  padding: 0 30px;
+}
+
+.main-visual {
+  width: 100%;
+  height: 650px;
+  background-image: url(img/mv.png);
+  /* 領域全体を埋め尽くす */
+  background-size: cover;
+  color: #FAFAFA;
+}
+
+.container {
+  /* background-color: aqua; */
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 200px;
+}
+
+
+
+.main-h1 {
+  font-size: 64px;
+}
+
+.main-p {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.portfolio {
+  background-color: #ECEFF1;
+  width: 100%;
+}
+
+/* 親要素 */
+.portfolio-container {
+  /* marginの調整 */
+
+  margin: 0 auto;
+  width: 920px;
+  color: #000000;
+
+  /* 子要素に対して */
+  text-align: center;
+
+}
+
+.portfolio-container h2 {
+  font-size: 32px;
+  padding-top: 90px;
+}
+
+/* 擬似要素::afterを使 */
+.portfolio-container h2::after {
+  content:"";
+  width: 70px;
+  background-color: #ec715F;
+  height: 3px;
+  /* afterはインラインなので */
+  display: block;
+  /* 中央揃え */
+  margin: 8px auto 0 auto;
+}
+
+.portfolio-container p {
+  margin: 30px 0;
+  font-size: 16px;
+}
+
+.image-boxes {
+  padding-bottom: 90px;
+}
+
+.pr {
+  width: 300px;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  float: left;
+}
+
+.clearfix::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.pr:nth-child(-n+3){
+  margin-bottom: 10px;
+}
+
+.pr1, .pr2, .pr4, .pr5{
+  margin-right: 10px;
+}
+
+/* feature */
+
+
+.feature {
+  width: 100%;
+  /* background-color: antiquewhite; */
+  color: #000000;
+}
+
+.feature-container {
+  width: 980px;
+  /* background-color: aquamarine; */
+  margin: 0 auto;
+  padding-bottom: 90px;
+
+  /* 子要素に対して */
+  text-align: center;
+}
+
+.feature-container h2 {
+  font-size: 32px;
+  padding-top: 90px;
+}
+
+.feature-container h2::after {
+
+  content: "";
+  /* したに配置 */
+  display: block;
+  background-color: #ec715F;
+  /* 中央揃え */
+  margin: 8px auto 0 auto;
+
+  /* 高さ調整 */
+  width: 70px;
+  height: 3px;
+}
+
+.explain {
+  padding: 30px 0 30px;
+  font-size: 16px;
+}
+
+.strength {
+  /* 横並びにします */
+  display: flex;
+}
+
+.st {
+  /* background-color: red; */
+  width: 320px;
+}
+
+.st1 {
+  margin-right: 10px;
+}
+
+.st2 {
+  margin-right: 10px;
+}
+
+.fa {
+  display: inline-block;
+  font-size: 60px;
+}
+
+.strength-title { 
+  font-size: 20px;
+  padding: 10px 0;
+}
+
+.strength p {
+  text-align: initial;
+}
+
+.profile {
+  color: #000000;
+  background-color: #ECEFF1;
+  width: 100%;
+}
+
+.profile-container {
+  width: 1024px;
+  /* background-color: aquamarine; */
+  margin: 0 auto;
+  padding-bottom: 90px;
+
+  /* 子要素 */
+  text-align: center;
+}
+
+.profile-container h2 {
+  font-size: 32px;
+  padding-top: 90px;
+}
+
+.profile-container h2::after {
+  /* content必ずつける */
+  content: "";
+  /* したに配置 */
+  display: block;
+  background-color: #ec715F;
+  /* 中央揃え */
+  margin: 8px auto 0 auto;
+
+  /* 高さ調整 */
+  width: 70px;
+  height: 3px;
+}
+
+
+/* .{
+  margin: 30px 0;
+} */
+
+.my-face {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-size: cover;
+  margin: 0 auto;
+}
+
+.subclass {
+  display: flex;
+  /* background-color: olive; */
+}
+
+/* ここを解決しないとだめ */
+.right-content {
+  width: 512px;
+  /* background-color: aqua; */
+}
+
+.left-content {
+  width: 512px;
+  /* background-color: brown; */
+}
+
+.right-content {
+  /* 解除 */
+  text-align: initial;
+  font-size: 16px;
+}
+
+.right-content h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.my-ex {
+  margin-bottom: 20px;
+}
+
+.contact {
+  color: #000000;
+  width: 100%;
+}
+
+.contact-content {
+  /* background-color: aquamarine; */
+  width: 800px;
+  margin: 0 auto;
+  padding-bottom: 90px;
+
+  /* 子要素に対して */
+  text-align: center;
+}
+
+.contact-content h2 {
+  font-size: 32px;
+  padding-top: 90px;
+}
+
+.contact-content h2::after { 
+  /* content必ずつける */
+  content: "";
+  /* したに配置 */
+  display: block;
+  background-color: #ec715F;
+  /* 中央揃え */
+  margin: 8px auto 0 auto;
+
+  /* 高さ調整 */
+  width: 70px;
+  height: 3px;
+}
+
+.left-contact {
+  width: 50%;
+  /* background-color: blue; */
+}
+
+.right-contact {
+  width: 50%;
+  /* background-color: red; */
+}
+
+.left-contact-content {
+  width: 130px;
+  /* background-color: aqua; */
+  text-align: initial;
+  margin: 0 auto;
+}
+
+.left-contact h3, .right-contact h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.mail {
+  margin-bottom: 20px;
+}
+
+.des_text {
+  color: #212121;
+}
+
+.right-contact-content {
+  /* background-color: bisque; */
+  width: 178px;
+  margin: 0 auto;
+  text-align: initial;
+}
+
+.right-contact-content .fa {
+  font-size: 50px;
+  margin-right: 20px;
+}
+
+.right-contact-content .fa-instagram {
+  margin-right: 0;
+}
+
+footer {
+  background-color: #ec715F;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright {
+  font-size: 16px;
+  color: #FAFAFA;
+}
+
+@media screen and (max-width: 767px) {
+
+  /* ヘッダー */
+  header {
+
+    height: 50px;
+
+  }
+  
+  .head-container {
+
+    width: 90%;
+    height: 50px;
+    /* background-color: green; */
+
+  }
+
+  .main-visual {
+    background-image: url(img/code.png);
+    background-position: center;
+    
+  }
+
+  .logo {
+
+    height: 50px;
+
+  }
+
+  .menu-box {
+    float: right;
+    width: 40px;
+    height: 40px;
+    margin-right: 5%;
+    border: 1px solid #FAFAFA;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .bar {
+    display: block;
+    width: 25px;
+    height: 2px;
+    margin: 5px auto;
+    background-color: #FAFAFA;
+  }
+
+  .bar:first-child {
+    margin-top: 10px;
+  }
+
+  .main-h1 {
+    font-size: 40px;
+  }
+
+  .main-p {
+    font-size: 18px;
+  }
+
+  .navi {
+    display: none;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  /* ポートフォリオ */
+
+  .profile-container {
+    width: 90%;
+  }
+
+  .feature-container {
+    width: 90%;
+  }
+
+  .portfolio-container {
+    width: 90%;
+  }
+
+  .contact-content {
+    width: 90%;
+  }
+
+  .subclass {
+    display: block;
+  }
+
+  .left-content {
+    width: 90%;
+  }
+
+  .right-content {
+    width: 90%;
+  }
+
+  .pr {
+    float: none;
+    margin: 0 auto;
+  }
+
+  .pr:nth-child(odd){
+    display: none;
+  }
+
+  .pr:nth-child(even){
+    margin-bottom: 10px;
+  }
+
+  .strength {
+    display: block;
+  }
+
+  .st {
+    margin: 0 auto;
+  }
+
+  .st2, .st3 {
+    margin-top: 30px;
+  }
+
+  .left-content {
+    margin: 0 auto;
+  }
+
+  .right-content {
+    margin: 0 auto;
+  }
+
+  .right-content {
+    text-align: center;
+  }
+
+  .right-content h3{
+    margin-top: 20px;
+  }
+
+  .my-ex {
+    margin: 0px;
+  }
+
+  .left-contact,
+  .right-contact {
+    margin: 0 auto;
+  }
+
+  .mail,
+  .tel {
+    text-align: center;
+  }
+
+  .right-contact-content {
+    text-align: center;
+  }
+
+  .right-contact-content h3 {
+    margin-top: 20px;
+  }
+
+  .right-contact-content .fa {
+    font-size: 50px;
+    margin-right: 8px;
+ }
+
+ .right-contact-content .fa:nth-child(3) {
+   margin-right: 0;
+ }
+
+}
